@@ -35,9 +35,9 @@ class HeroTableViewCell: UITableViewCell {
         }
         
         //Transformação da imagem em circulo
-//        ivThumb.layer.cornerRadius = ivThumb.frame.size.height / 2
-//        ivThumb.layer.borderColor = UIColor.red.cgColor
-//        ivThumb.layer.borderWidth = 2
+        ivThumb.layer.cornerRadius = ivThumb.frame.size.height / 2
+        ivThumb.layer.borderColor = UIColor.red.cgColor
+        ivThumb.layer.borderWidth = 2
         
     }
     

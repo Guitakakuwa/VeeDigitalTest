@@ -35,8 +35,6 @@ class HeroesTableViewController: UITableViewController {
             if let info = info {
                 self.heroes += info.data.results
                 self.total = info.data.total
-                print(self.total)
-                print(self.heroes.count)
                 DispatchQueue.main.async {
                     self.loadingHeroes = false
                     self.tableView.reloadData()
