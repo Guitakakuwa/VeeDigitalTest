@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y16-xP-c98">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Heroes Table View Controller-->
+        <scene sceneID="XWF-Wy-xie">
+            <objects>
+                <tableViewController id="Y16-xP-c98" customClass="HeroesTableViewController" customModule="VeeQuizMarvel" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="RkF-vh-PtR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="sectionIndexBackgroundColor" white="0.1170715611" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="135" id="LDF-dU-qPs" customClass="HeroTableViewCell" customModule="VeeQuizMarvel">
+                                <rect key="frame" x="0.0" y="28" width="375" height="135"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LDF-dU-qPs" id="cs1-pX-f1Z">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="134.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LZL-Nx-niV">
+                                            <rect key="frame" x="129" y="21" width="46" height="20.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FcQ-2d-1Mc">
+                                            <rect key="frame" x="8" y="10" width="83" height="83"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="83" id="92y-9Z-ARi"/>
+                                                <constraint firstAttribute="height" constant="83" id="Jm2-JV-97q"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PtU-Gv-pJ1">
+                                            <rect key="frame" x="129" y="71.5" width="220" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.1170715611" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottomMargin" secondItem="PtU-Gv-pJ1" secondAttribute="bottom" constant="10" id="9kz-X0-QXS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="PtU-Gv-pJ1" secondAttribute="trailing" constant="10" id="APh-7o-nsb"/>
+                                        <constraint firstItem="FcQ-2d-1Mc" firstAttribute="leading" secondItem="cs1-pX-f1Z" secondAttribute="leading" constant="8" id="HFm-uf-x7Z"/>
+                                        <constraint firstItem="PtU-Gv-pJ1" firstAttribute="top" secondItem="LZL-Nx-niV" secondAttribute="bottom" constant="30" id="PLb-t2-Sub"/>
+                                        <constraint firstItem="FcQ-2d-1Mc" firstAttribute="top" secondItem="cs1-pX-f1Z" secondAttribute="top" constant="10" id="RVA-aB-hyg"/>
+                                        <constraint firstItem="LZL-Nx-niV" firstAttribute="top" secondItem="cs1-pX-f1Z" secondAttribute="topMargin" constant="10" id="YPj-TQ-xC7"/>
+                                        <constraint firstAttribute="bottom" secondItem="FcQ-2d-1Mc" secondAttribute="bottom" constant="10" id="bLx-40-bQ3"/>
+                                        <constraint firstItem="LZL-Nx-niV" firstAttribute="leading" secondItem="FcQ-2d-1Mc" secondAttribute="trailing" constant="38" id="col-Jz-HNU"/>
+                                        <constraint firstItem="PtU-Gv-pJ1" firstAttribute="leading" secondItem="FcQ-2d-1Mc" secondAttribute="trailing" constant="38" id="we7-hd-NZQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="ivThumb" destination="FcQ-2d-1Mc" id="SOS-s9-V8K"/>
+                                    <outlet property="lbDescription" destination="PtU-Gv-pJ1" id="CKO-qI-ix3"/>
+                                    <outlet property="lbName" destination="LZL-Nx-niV" id="xbH-dg-pE9"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Y16-xP-c98" id="h8x-Ac-DMB"/>
+                            <outlet property="delegate" destination="Y16-xP-c98" id="GDu-Bu-7Mf"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SP0-2T-WTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+</document>
