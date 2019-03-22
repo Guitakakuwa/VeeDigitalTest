@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		BF1BB3302244E93700FDD572 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BB32F2244E93700FDD572 /* Hero.swift */; };
 		BF2630B3224510CA00F8D24D /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B2224510CA00F8D24D /* MarvelAPI.swift */; };
-		BF2630B622455B1000F8D24D /* HeroesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B522455B1000F8D24D /* HeroesTableViewController.swift */; };
+		BF2630B622455B1000F8D24D /* HeroesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B522455B1000F8D24D /* HeroesTableVC.swift */; };
 		BF2630B822455C5600F8D24D /* HeroListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B722455C5600F8D24D /* HeroListCell.swift */; };
+		BF2630BA22456DCD00F8D24D /* HeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B922456DCD00F8D24D /* HeroVC.swift */; };
 		BF3656532244E53100451044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3656522244E53100451044 /* AppDelegate.swift */; };
 		BF3656582244E53100451044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3656562244E53100451044 /* Main.storyboard */; };
 		BF36565A2244E53200451044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3656592244E53200451044 /* Assets.xcassets */; };
@@ -23,8 +24,9 @@
 		A6727C94C8649ABB54D362B1 /* Pods-VeeQuizMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeQuizMarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeeQuizMarvel/Pods-VeeQuizMarvel.release.xcconfig"; sourceTree = "<group>"; };
 		BF1BB32F2244E93700FDD572 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
 		BF2630B2224510CA00F8D24D /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
-		BF2630B522455B1000F8D24D /* HeroesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesTableViewController.swift; sourceTree = "<group>"; };
+		BF2630B522455B1000F8D24D /* HeroesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesTableVC.swift; sourceTree = "<group>"; };
 		BF2630B722455C5600F8D24D /* HeroListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListCell.swift; sourceTree = "<group>"; };
+		BF2630B922456DCD00F8D24D /* HeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroVC.swift; sourceTree = "<group>"; };
 		BF36564F2244E53100451044 /* VeeQuizMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeeQuizMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3656522244E53100451044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3656572244E53100451044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,8 +76,9 @@
 		BF2630B422455AFA00F8D24D /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				BF2630B522455B1000F8D24D /* HeroesTableViewController.swift */,
+				BF2630B522455B1000F8D24D /* HeroesTableVC.swift */,
 				BF2630B722455C5600F8D24D /* HeroListCell.swift */,
+				BF2630B922456DCD00F8D24D /* HeroVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -278,7 +281,8 @@
 				BF1BB3302244E93700FDD572 /* Hero.swift in Sources */,
 				BF3656532244E53100451044 /* AppDelegate.swift in Sources */,
 				BF2630B3224510CA00F8D24D /* MarvelAPI.swift in Sources */,
-				BF2630B622455B1000F8D24D /* HeroesTableViewController.swift in Sources */,
+				BF2630BA22456DCD00F8D24D /* HeroVC.swift in Sources */,
+				BF2630B622455B1000F8D24D /* HeroesTableVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

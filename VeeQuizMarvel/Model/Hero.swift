@@ -29,6 +29,7 @@ struct Hero: Codable {
     let description: String
     let thumbnail: Thumbnail
     let urls: [HeroURL]
+    let modified:String
     
 }
 

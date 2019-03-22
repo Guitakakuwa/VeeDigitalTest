@@ -25,7 +25,6 @@ class HeroesTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        label.text = "Buscando herois. Aguarde..."
         loadHeroes()
     }
 
@@ -51,6 +50,10 @@ class HeroesTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.backgroundView = heroes.count == 0 ? label : nil
         return heroes.count
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc = segue.destination as! HeroVC
+        vc.hero = heroes[tableView.indexPathForSelectedRow!.row]
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

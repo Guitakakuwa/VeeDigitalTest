@@ -11,9 +11,11 @@ import Kingfisher
 
 class HeroTableViewCell: UITableViewCell {
     
-    @IBOutlet weak var ivThumb: UIImageView!
-    @IBOutlet weak var lbName: UILabel!
-    @IBOutlet weak var lbDescription: UILabel!
+    @IBOutlet var dataModificacao: UILabel!
+    @IBOutlet weak var imageHero: UIImageView!
+    @IBOutlet weak var nameHero: UILabel!
+    @IBOutlet weak var descHero: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -26,18 +28,19 @@ class HeroTableViewCell: UITableViewCell {
     }
     //
     func prepareHero(with hero: Hero) {
-        lbName.text = hero.name
-        lbDescription.text = hero.description
+        nameHero.text = hero.name
+        descHero.text = hero.description
+        dataModificacao.text = hero.modified
         if let url = URL(string: hero.thumbnail.url) {
-            ivThumb.kf.setImage(with: url)
+            imageHero.kf.setImage(with: url)
         } else {
-            ivThumb.image = nil
+            imageHero.image = nil
         }
         
         //Transformação da imagem em circulo
-        ivThumb.layer.cornerRadius = ivThumb.frame.size.height / 2
-        ivThumb.layer.borderColor = UIColor.red.cgColor
-        ivThumb.layer.borderWidth = 2
+        imageHero.layer.cornerRadius = imageHero.frame.size.height / 2
+        imageHero.layer.borderColor = UIColor.red.cgColor
+        imageHero.layer.borderWidth = 2
         
     }
     
