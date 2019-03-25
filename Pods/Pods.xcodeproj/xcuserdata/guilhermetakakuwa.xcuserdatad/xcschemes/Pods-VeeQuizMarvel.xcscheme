@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3A3C0B4AF50AA10033EA56A5911259BC"
+               BlueprintIdentifier = "A1565809D0F4312F38EC1B52F5DF102D"
                BuildableName = "Pods_VeeQuizMarvel.framework"
                BlueprintName = "Pods-VeeQuizMarvel"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3A3C0B4AF50AA10033EA56A5911259BC"
+            BlueprintIdentifier = "A1565809D0F4312F38EC1B52F5DF102D"
             BuildableName = "Pods_VeeQuizMarvel.framework"
             BlueprintName = "Pods-VeeQuizMarvel"
             ReferencedContainer = "container:Pods.xcodeproj">

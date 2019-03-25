@@ -30,7 +30,7 @@ class HeroTableViewCell: UITableViewCell {
     func prepareHero(with hero: Hero) {
         nameHero.text = hero.name
         descHero.text = hero.description
-        dataModificacao.text = hero.modified
+        dataModificacao.text = "Data de modificação: "+hero.modified
         if let url = URL(string: hero.thumbnail.url) {
             imageHero.kf.setImage(with: url)
         } else {

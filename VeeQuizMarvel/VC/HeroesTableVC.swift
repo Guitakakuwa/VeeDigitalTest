@@ -22,6 +22,7 @@ class HeroesTableViewController: UITableViewController {
     var loadingHeroes: Bool = false
     var currentPage: Int = 0
     var total = 0
+    var heroesLoading = true
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +31,7 @@ class HeroesTableViewController: UITableViewController {
 
     func loadHeroes() {
         loadingHeroes = true
-        MarvelAPI.loadHeroes(name: name) { (info) in
+        MarvelAPI.loadHeroes() { (info) in
             if let info = info {
                 self.heroes += info.data.results
                 self.total = info.data.total
@@ -61,7 +62,7 @@ class HeroesTableViewController: UITableViewController {
 
         let hero = heroes[indexPath.row]
         cell.prepareHero(with: hero)
-
+        heroesLoading = false
         return cell
     }
 
@@ -69,6 +70,14 @@ class HeroesTableViewController: UITableViewController {
         if indexPath.row == heroes.count - 10 && !loadingHeroes && heroes.count != total {
             currentPage += 1
             loadHeroes()
+        }
+    }
+    
+    func isHeroesLoading (loading:Bool) {
+         DispatchQueue.main.async {
+        if loading == true {
+            self.isHeroesLoading(loading: loading)
+            }
         }
     }
 

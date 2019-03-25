@@ -12,4 +12,6 @@ pod 'Alamofire'
 pod 'GoogleSignIn'
 pod 'SwiftHash'
 pod 'Kingfisher'
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
 end

@@ -17,16 +17,9 @@ class MarvelAPI {
     static let publicKey = "26a2b99fb1cde83f61e79d53c65803ba"
     static private let limit = 50
     
-    class func loadHeroes(name: String?, onComplete: @escaping (MarvelInfo?) -> Void) {
+    class func loadHeroes(onComplete: @escaping (MarvelInfo?) -> Void) {
         let offset = limit
-        let startsWith: String
-        if let name = name, !name.isEmpty {
-            startsWith = "nameStartsWith=\(name.replacingOccurrences(of: " ", with: ""))"
-        } else {
-            startsWith = ""
-        }
-        
-        let url = basePath + "offset=\(offset)&limit=\(limit)&" + startsWith + getCredentials()
+        let url = basePath + "offset=\(offset)&limit=\(limit)&" + getCredentials()
         print(url)
         Alamofire.request(url).responseJSON { (response) in
             guard let data = response.data,

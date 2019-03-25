@@ -7,32 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BF1BB3302244E93700FDD572 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BB32F2244E93700FDD572 /* Hero.swift */; };
+		BF1BB3302244E93700FDD572 /* Structs.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF1BB32F2244E93700FDD572 /* Structs.swift */; };
+		BF2435502246B89B00AA9B52 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF24354F2246B89B00AA9B52 /* WelcomeVC.swift */; };
 		BF2630B3224510CA00F8D24D /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B2224510CA00F8D24D /* MarvelAPI.swift */; };
 		BF2630B622455B1000F8D24D /* HeroesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B522455B1000F8D24D /* HeroesTableVC.swift */; };
 		BF2630B822455C5600F8D24D /* HeroListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B722455C5600F8D24D /* HeroListCell.swift */; };
 		BF2630BA22456DCD00F8D24D /* HeroVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630B922456DCD00F8D24D /* HeroVC.swift */; };
+		BF2630BC2245B11D00F8D24D /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2630BB2245B11D00F8D24D /* LoginController.swift */; };
+		BF2630BE2245B27F00F8D24D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF2630BD2245B27B00F8D24D /* GoogleService-Info.plist */; };
 		BF3656532244E53100451044 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3656522244E53100451044 /* AppDelegate.swift */; };
 		BF3656582244E53100451044 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF3656562244E53100451044 /* Main.storyboard */; };
 		BF36565A2244E53200451044 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3656592244E53200451044 /* Assets.xcassets */; };
 		BF36565D2244E53200451044 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF36565B2244E53200451044 /* LaunchScreen.storyboard */; };
+		BF6E8C682246E55000565675 /* ShameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6E8C672246E55000565675 /* ShameVC.swift */; };
 		CF8DB018E65C04DA1D319253 /* Pods_VeeQuizMarvel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E395CBE2341580FAD135418C /* Pods_VeeQuizMarvel.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6CAA98DAAE03FFCB537F2BEC /* Pods-VeeQuizMarvel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeQuizMarvel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VeeQuizMarvel/Pods-VeeQuizMarvel.debug.xcconfig"; sourceTree = "<group>"; };
 		A6727C94C8649ABB54D362B1 /* Pods-VeeQuizMarvel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VeeQuizMarvel.release.xcconfig"; path = "Pods/Target Support Files/Pods-VeeQuizMarvel/Pods-VeeQuizMarvel.release.xcconfig"; sourceTree = "<group>"; };
-		BF1BB32F2244E93700FDD572 /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		BF1BB32F2244E93700FDD572 /* Structs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Structs.swift; sourceTree = "<group>"; };
+		BF24354F2246B89B00AA9B52 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		BF2630B2224510CA00F8D24D /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		BF2630B522455B1000F8D24D /* HeroesTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroesTableVC.swift; sourceTree = "<group>"; };
 		BF2630B722455C5600F8D24D /* HeroListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListCell.swift; sourceTree = "<group>"; };
 		BF2630B922456DCD00F8D24D /* HeroVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroVC.swift; sourceTree = "<group>"; };
+		BF2630BB2245B11D00F8D24D /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		BF2630BD2245B27B00F8D24D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BF36564F2244E53100451044 /* VeeQuizMarvel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeeQuizMarvel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF3656522244E53100451044 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF3656572244E53100451044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF3656592244E53200451044 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF36565C2244E53200451044 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF36565E2244E53200451044 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF6E8C672246E55000565675 /* ShameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShameVC.swift; sourceTree = "<group>"; };
 		E395CBE2341580FAD135418C /* Pods_VeeQuizMarvel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VeeQuizMarvel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -60,7 +68,7 @@
 		BF1BB32E2244E92800FDD572 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				BF1BB32F2244E93700FDD572 /* Hero.swift */,
+				BF1BB32F2244E93700FDD572 /* Structs.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -76,9 +84,12 @@
 		BF2630B422455AFA00F8D24D /* VC */ = {
 			isa = PBXGroup;
 			children = (
+				BF6E8C672246E55000565675 /* ShameVC.swift */,
 				BF2630B522455B1000F8D24D /* HeroesTableVC.swift */,
 				BF2630B722455C5600F8D24D /* HeroListCell.swift */,
 				BF2630B922456DCD00F8D24D /* HeroVC.swift */,
+				BF2630BB2245B11D00F8D24D /* LoginController.swift */,
+				BF24354F2246B89B00AA9B52 /* WelcomeVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -110,6 +121,7 @@
 				BF3656522244E53100451044 /* AppDelegate.swift */,
 				BF3656562244E53100451044 /* Main.storyboard */,
 				BF3656592244E53200451044 /* Assets.xcassets */,
+				BF2630BD2245B27B00F8D24D /* GoogleService-Info.plist */,
 				BF36565B2244E53200451044 /* LaunchScreen.storyboard */,
 				BF36565E2244E53200451044 /* Info.plist */,
 			);
@@ -186,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF36565D2244E53200451044 /* LaunchScreen.storyboard in Resources */,
+				BF2630BE2245B27F00F8D24D /* GoogleService-Info.plist in Resources */,
 				BF36565A2244E53200451044 /* Assets.xcassets in Resources */,
 				BF3656582244E53100451044 /* Main.storyboard in Resources */,
 			);
@@ -278,11 +291,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF2630B822455C5600F8D24D /* HeroListCell.swift in Sources */,
-				BF1BB3302244E93700FDD572 /* Hero.swift in Sources */,
+				BF1BB3302244E93700FDD572 /* Structs.swift in Sources */,
 				BF3656532244E53100451044 /* AppDelegate.swift in Sources */,
 				BF2630B3224510CA00F8D24D /* MarvelAPI.swift in Sources */,
 				BF2630BA22456DCD00F8D24D /* HeroVC.swift in Sources */,
 				BF2630B622455B1000F8D24D /* HeroesTableVC.swift in Sources */,
+				BF2630BC2245B11D00F8D24D /* LoginController.swift in Sources */,
+				BF2435502246B89B00AA9B52 /* WelcomeVC.swift in Sources */,
+				BF6E8C682246E55000565675 /* ShameVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

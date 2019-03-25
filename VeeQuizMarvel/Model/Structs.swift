@@ -53,3 +53,6 @@ struct HeroURL: Codable {
     let url: String
 }
 
+struct GoogleUser : Codable {
+    let name : String
+}
